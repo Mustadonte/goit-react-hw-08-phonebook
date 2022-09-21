@@ -15,14 +15,14 @@ export const NavBarMenu = () => {
           </NavLink>
         </li>
         <li className={css.navList__item}>
-          <NavLink
+          {/* <NavLink
             className={({ isActive }) =>
               isActive ? `${css.link} ${css.active}` : `${css.link}`
             }
             to="favorites"
           >
             Favorite contacts
-          </NavLink>
+          </NavLink> */}
         </li>
       </ul>
     </nav>

@@ -3,11 +3,21 @@ import css from './Navbar.module.css';
 export const NavBarAuth = () => {
   return (
     <div>
-      <NavLink className={css.link} to="login">
+      <NavLink
+        className={({ isActive }) =>
+          isActive ? `${css.link} ${css.active}` : `${css.link}`
+        }
+        to="login"
+      >
         Login
       </NavLink>
       |
-      <NavLink className={css.link} to="register">
+      <NavLink
+        className={({ isActive }) =>
+          isActive ? `${css.link} ${css.active}` : `${css.link}`
+        }
+        to="register"
+      >
         Register
       </NavLink>
     </div>

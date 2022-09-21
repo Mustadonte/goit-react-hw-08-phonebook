@@ -24,11 +24,18 @@ const RegisterPage = lazy(() =>
     default: module.RegisterPage,
   }))
 );
+
+const HomePage = lazy(() =>
+  import('pages/homePage').then(module => ({
+    ...module,
+    default: module.HomePage,
+  }))
+);
 export const UserRoutes = () => {
   return (
     <Routes>
       <Route path="/" element={<SharedLayout />}>
-        <Route index element={<p>Welcome!</p>} />
+        <Route index element={<HomePage />} />
         <Route element={<PublicRoute />}>
           <Route path="register" element={<RegisterPage />} />
           <Route path="login" element={<LoginPage />} />
