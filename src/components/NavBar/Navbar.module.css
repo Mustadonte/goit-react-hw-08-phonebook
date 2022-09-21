@@ -1,0 +1,32 @@
+.header__containter {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+margin-bottom: 100px;
+}
+
+.logo {
+    display: inline-block;
+    left: 0;
+}
+
+.navList {
+    display: flex;
+    list-style: none;
+    text-align: center;
+}
+
+.navList__item:not(:first-child) {
+    margin-left: 20px;
+}
+
+.link {
+    text-decoration: none;
+    color: yellow
+}
+
+.active {
+    color: blueviolet;
+
+    
+}
