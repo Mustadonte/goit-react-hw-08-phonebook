@@ -1,0 +1,1 @@
+{"version":3,"file":"static/js/802.a4586049.chunk.js","mappings":"wMAAaA,EAAW,WACtB,OAAO","sources":["pages/homePage.jsx"],"sourcesContent":["export const HomePage = () => {\n  return <p>Welcome to Online phonebook! You have to Sign in, or register!</p>;\n};\n"],"names":["HomePage"],"sourceRoot":""}
